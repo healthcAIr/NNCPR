@@ -88,7 +88,7 @@ Tensor("Sum:0", shape=(), dtype=float32)
 
 ## Usage
 
-We will download a plain radiograph [showing a knee from Wikimedia (CC BY-SA 4.0 license)](https://commons.wikimedia.org/wiki/File:Knee_plain_X-ray.jpg) and save is as `example.jpg`.
+We will download a plain radiograph [showing a knee from Wikimedia (CC BY-SA 4.0 license)](https://commons.wikimedia.org/wiki/File:Knee_plain_X-ray.jpg) and save it as `example.jpg`.
 
 ```shell
 curl -o example.jpg https://upload.wikimedia.org/wikipedia/commons/f/f0/Knee_plain_X-ray.jpg
@@ -123,7 +123,7 @@ python label_image.py image1.jpg image2.jpg image3.jpg ... imageN.jpg
 ### Important
 
 1) The model can only classify the 30 categories of plain radiographs listed above.
-   Using images other than these 30 categories will produce incorrect results.
+   Using images from other than these 30 categories will produce incorrect results.
 2) The predictions of the model can be inaccurate and the accuracy of the model varies between classes.
    However, the distribution of the sensitivity of the model was rather balanced across classes, ranging between 61.0% and 100.0%.
    18 out of 30 categories (60.0%) reached a sensitivity of over 90.0%, and 27 out of 30 categories (90.0%) reached a sensitivity over 80.0%.
